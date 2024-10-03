@@ -1,11 +1,10 @@
 fun main(args : Array<String>){
-    var text : String? = null
-    text = ""
-/**Les Operateurs safe and unSafe*/
-    /**Affiche null*/
-    println("Hello ${text?.length}")
-    /**Leve une exception*/
-    println("Hello ${text!!.length}")
-/** val est une constante*/
-    val text1 = " Kotlin"
+    val str : String = "Hello Kotlin"
+    val entier : Int = 42
+    var str1 : String? = "  "
+    println("Ceci est le texte $str ${str1?.length} ${entier}")
+    println(str1.isNullOrBlank() as Boolean)
+    if (str1.isNullOrBlank()){
+        println("Ceci est le texte $str ${str1?.length} ${entier}")
+    }
 }
